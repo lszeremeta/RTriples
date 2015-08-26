@@ -1,0 +1,18 @@
+<% if @subject %>--- SUBJECTS ---
+<% @subject.each do |subject| %><%= subject %>
+
+<% end %>
+
+<% end %>
+<% if @predicate %>--- PREDICATES ---
+<% @predicate.each do |predicate| %><%= predicate %>
+
+<% end %>
+
+<% end %>
+<% if @object %>--- OBJECTS ---
+<% @object.each do |object| %><%= object %>
+
+<% end %>
+
+<% end %>

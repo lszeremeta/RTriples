@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <title>RTriples</title>
+  <meta name="description" content="Simple but powerful triplestore solution based on awesome RethinkDB database & Ruby projects like Sinatra.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="table">
+  <table border="1">
+    <thead>
+    <tr>
+      <% if @subject %>
+          <td>Subject</td>
+      <% end %>
+      <% if @predicate %>
+          <td>Predicate</td>
+      <% end %>
+      <% if @object %>
+          <td>Object</td>
+      <% end %>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <% if @subject %>
+          <td>
+            <ol>
+              <% @subject.each do |subject| %>
+                  <li><a href="/<%= "?s=" + url_encode(subject) %>"><%= subject %></a></li>
+              <% end %>
+            </ol>
+          </td>
+      <% end %>
+      <% if @predicate %>
+          <td>
+            <ol>
+              <% @predicate.each do |predicate| %>
+                  <li><a href="/<%= "?p=" + url_encode(predicate) %>"><%= predicate %></a></li>
+              <% end %>
+            </ol>
+          </td>
+      <% end %>
+      <% if @object %>
+          <td>
+            <ol>
+              <% @object.each do |object| %>
+                  <li><a href="/<%= "?o=" + url_encode(object) %>"><%= object %></a></li>
+              <% end %>
+            </ol>
+          </td>
+      <% end %>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

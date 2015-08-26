@@ -1,0 +1,5 @@
+subject,predicate,object
+<% @size.times do |i|  %>
+<% if @subject %><%= @subject[i] %>,<% else %><%= @s %>,<% end %><% if @predicate %><%= @predicate[i] %>,<% else %><%= @p %>,<% end %><% if @object %><%= @object[i] %><% else %><%= @o %><% end %>
+
+<% end %>

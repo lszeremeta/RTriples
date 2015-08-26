@@ -1,0 +1,3 @@
+<% @size.times do |i|  %>
+<<% if @subject %><%= @subject[i] %><% else %><%= @s %><% end %>> <<% if @predicate %><%= @predicate[i] %><% else %><%= @p %><% end %>> <% if @quotes %>"<% else %><<% end %><% if @object %><%= @object[i] %><% else %><%= @o %><% end %><% if @quotes %>"<% else %>><% end %><% if @lang %>@<%= @lang %><% end %><% if @datatype %>^^<%= @datatype %><% end %> .
+<% end %>
