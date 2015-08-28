@@ -13,7 +13,7 @@ bundle
 
 _Note_: RethinkDB must be [installed](http://www.rethinkdb.com/docs/install/) and [started](http://www.rethinkdb.com/docs/start-a-server/).
 
-Now you may need to import some triples to RethinkDB ([RDF/JSON serialization](http://www.w3.org/2009/12/rdf-ws/papers/ws02)). You can simply generate it through [bsbmtools-json](https://github.com/lszeremeta/bsbmtools-json).
+Now you may need to import some triples to RethinkDB ([RDF/JSON serialization](http://www.w3.org/2009/12/rdf-ws/papers/ws02)). You can simply generate it through [bsbmtools-json](https://github.com/lszeremeta/bsbmtools-json) or just use one of [generated samples](https://github.com/lszeremeta/bsbmtools-json-samples).
 
 After that, import this data to RethinkDB:
 
