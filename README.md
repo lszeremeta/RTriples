@@ -73,7 +73,5 @@ Specify the output format using ```format``` parameter:
 * ```txt``` - simple text document output
 * ```html``` - standard HTML table (default option)
 
-
-## Author
-
-(C) [Łukasz Szeremeta](https://github.com/lszeremeta) 2015
+## License
+Distributed under [MIT license](https://github.com/lszeremeta/RTriples/blob/master/LICENSE.txt).
