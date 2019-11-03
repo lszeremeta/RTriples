@@ -2,10 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     json (1.8.3)
-    rack (1.6.4)
+    rack (1.6.11)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     rethinkdb (2.1.0)
       json
